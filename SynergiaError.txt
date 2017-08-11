@@ -1,0 +1,24 @@
+[alphabase@localhost ParticleProject]$ synbeamplot diagnostics.h5 z x
+HDF5-DIAG: Error detected in HDF5 (1.8.15-patch1) thread 0:
+  #000: ../../src/H5D.c line 358 in H5Dopen2(): not found
+    major: Dataset
+    minor: Object not found
+  #001: ../../src/H5Gloc.c line 430 in H5G_loc_find(): can't find object
+    major: Symbol table
+    minor: Object not found
+  #002: ../../src/H5Gtraverse.c line 861 in H5G_traverse(): internal path traversal failed
+    major: Symbol table
+    minor: Object not found
+  #003: ../../src/H5Gtraverse.c line 641 in H5G_traverse_real(): traversal operator failed
+    major: Symbol table
+    minor: Callback failed
+  #004: ../../src/H5Gloc.c line 385 in H5G_loc_find_cb(): object 'particles' doesn't exist
+    major: Symbol table
+    minor: Object not found
+Traceback (most recent call last):
+  File "/home/alphabase/synergia2-devel/install/lib/synergia_tools/beam_plot.py", line 190, in <module>
+    do_plots(options)
+  File "/home/alphabase/synergia2-devel/install/lib/synergia_tools/beam_plot.py", line 161, in do_plots
+    particles = f.read_array2d('particles')
+RuntimeError: unidentifiable C++ exception
+

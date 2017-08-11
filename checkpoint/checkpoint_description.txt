@@ -1,0 +1,2 @@
+last_turn=100
+mpi_size=1

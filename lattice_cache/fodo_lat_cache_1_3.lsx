@@ -1,0 +1,21 @@
+{name: fodo, type: Mad8, 
+ reference_particle: 
+     {four_momentum: 
+         {mass: 0.938272046, gamma: 1.59868345901888}, charge: 1}, 
+ elements: 
+     {{type: quadrupole, name: f, 
+      {k1: 0.0714285714285714, l: 2}, 
+     ancestors: 
+         {fodo}}, 
+      {type: drift, name: o, 
+       {l: 8}, 
+      ancestors: 
+          {fodo}}, 
+      {type: quadrupole, name: d, 
+       {k1: -0.0714285714285714, l: 2}, 
+      ancestors: 
+          {fodo}}, 
+      {type: drift, name: o, 
+       {l: 8}, 
+      ancestors: 
+          {fodo}}}}
